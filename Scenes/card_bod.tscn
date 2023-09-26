@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://cjdqygkja48y7"]
+[gd_scene load_steps=5 format=3 uid="uid://cjdqygkja48y7"]
 
 [ext_resource type="Script" path="res://Scripts/Draggable.gd" id="1_pkxni"]
 [ext_resource type="Texture2D" uid="uid://ptkew8n70wrp" path="res://Art/TarotDecks/mst001f/00_The Fool.png" id="1_qic1c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d3spq"]
 size = Vector2(89, 149)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_jyvnu"]
+polygon = PackedVector2Array(-45, -75, 45, -74, 45, 74, -46, 74)
 
 [node name="CardBod" type="CharacterBody2D"]
 input_pickable = true
@@ -17,5 +20,8 @@ shape = SubResource("RectangleShape2D_d3spq")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_qic1c")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+occluder = SubResource("OccluderPolygon2D_jyvnu")
 
 [connection signal="input_event" from="." to="." method="_on_KinematicBody2D_input_event"]

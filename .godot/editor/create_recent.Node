@@ -1,3 +1,5 @@
+LightOccluder2D
+PointLight2D
 TextureRect
 Sprite2D
 CollisionShape2D

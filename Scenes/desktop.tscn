@@ -1,13 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://bkn02rr14i6an"]
+[gd_scene load_steps=7 format=3 uid="uid://bkn02rr14i6an"]
 
 [ext_resource type="Shader" path="res://Art/Shaders/dropShadow.gdshader" id="1_3n7g6"]
 [ext_resource type="Texture2D" uid="uid://mha7qnhmcthk" path="res://Art/MiscAssets/TableTop.jpg" id="2_ayksn"]
+[ext_resource type="PackedScene" uid="uid://cjdqygkja48y7" path="res://Scenes/card_bod.tscn" id="3_dk80f"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_higqs"]
 resource_local_to_scene = true
 shader = ExtResource("1_3n7g6")
 shader_parameter/scale = 1.0
 shader_parameter/color = Color(0.578015, 0.426402, 0.282869, 1)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_6s1h2"]
+polygon = PackedVector2Array(307, 206, 306, -204, -306, -204, -305, 204)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_6wxag"]
+size = Vector2(200, 200)
 
 [node name="Desktop" type="Control"]
 layout_mode = 3
@@ -20,3 +27,17 @@ grow_vertical = 2
 [node name="TabletopSprite" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_higqs")
 texture = ExtResource("2_ayksn")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="TabletopSprite"]
+visible = false
+occluder = SubResource("OccluderPolygon2D_6s1h2")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+scale = Vector2(13.3748, 8.88549)
+shadow_enabled = true
+texture = SubResource("PlaceholderTexture2D_6wxag")
+texture_scale = 9.44
+height = 100.0
+
+[node name="CardBod" parent="." instance=ExtResource("3_dk80f")]
+position = Vector2(-180, -15)
