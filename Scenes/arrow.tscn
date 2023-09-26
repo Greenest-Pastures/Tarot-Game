@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dv3wrjtps5sbc"]
+
+[ext_resource type="Texture2D" uid="uid://bewiu0q2mhuyu" path="res://Art/Arrow.png" id="1_2fqhi"]
+[ext_resource type="Script" path="res://Scenes/ClickToMove.gd" id="2_kkt6a"]
+
+[node name="Arrow" type="TextureRect"]
+offset_right = 349.0
+offset_bottom = 268.0
+texture = ExtResource("1_2fqhi")
+script = ExtResource("2_kkt6a")
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 348.0
+offset_bottom = 268.0
+
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]

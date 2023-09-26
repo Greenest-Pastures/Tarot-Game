@@ -1,0 +1,46 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1695704547
+icon.svg::CompressedTexture2D::1434815201031088516::1695626288::1695626288::1::::<><>::
+README.md::TextFile::-1::1695704357::0::1::::<><>::
+::res://Art/::1695630414
+Arrow.png::CompressedTexture2D::2713115159698491116::1695626289::1695626289::1::::<><>::
+RoomFour.png::CompressedTexture2D::7781447548784223260::1695626289::1695626289::1::::<><>::
+RoomOne.png::CompressedTexture2D::7172970608900962045::1695626289::1695626289::1::::<><>::
+RoomThree.png::CompressedTexture2D::274666602588497714::1695626289::1695626289::1::::<><>::
+RoomTwo.png::CompressedTexture2D::1395494875902565023::1695626289::1695626289::1::::<><>::
+::res://Art/TarotDecks/::1695630418
+::res://Art/TarotDecks/mst001f/::1695630419
+00_The Fool.png::CompressedTexture2D::1092671352127586513::1695630418::1695630419::1::::<><>::
+01_The Magician.png::CompressedTexture2D::7496128484858397635::1695630418::1695630419::1::::<><>::
+02_The High Priestess.png::CompressedTexture2D::1248212489818780924::1695630418::1695630419::1::::<><>::
+03_The Empress.png::CompressedTexture2D::7561580669678141393::1695630418::1695630419::1::::<><>::
+04_The Emperor.png::CompressedTexture2D::1747418866105672630::1695630418::1695630419::1::::<><>::
+05_The Hierophant.png::CompressedTexture2D::5240901159269446084::1695630418::1695630419::1::::<><>::
+06_The Lovers.png::CompressedTexture2D::607032333741439919::1695630418::1695630419::1::::<><>::
+07_The Chariot.png::CompressedTexture2D::4454555759314035500::1695630418::1695630419::1::::<><>::
+08_Strength.png::CompressedTexture2D::5506588093495566576::1695630418::1695630419::1::::<><>::
+09_The Hermit.png::CompressedTexture2D::5637306369246650114::1695630418::1695630419::1::::<><>::
+10_Wheel of Fortune.png::CompressedTexture2D::5954396305854418695::1695630418::1695630419::1::::<><>::
+11_Justice.png::CompressedTexture2D::945195899780719207::1695630418::1695630419::1::::<><>::
+12_The Hanged Man.png::CompressedTexture2D::8151319877755790283::1695630418::1695630419::1::::<><>::
+13_Death.png::CompressedTexture2D::6445664079423882778::1695630418::1695630419::1::::<><>::
+14_Temperance.png::CompressedTexture2D::6085840425159918689::1695630418::1695630419::1::::<><>::
+15_The Devil.png::CompressedTexture2D::3386386494678877299::1695630418::1695630419::1::::<><>::
+16_The Tower.png::CompressedTexture2D::2888850613698728126::1695630418::1695630419::1::::<><>::
+17_The Star.png::CompressedTexture2D::4557049296779336398::1695630418::1695630419::1::::<><>::
+18_The Moon.png::CompressedTexture2D::4781288369481903885::1695630418::1695630419::1::::<><>::
+19_The Sun.png::CompressedTexture2D::7181004032665394301::1695630419::1695630419::1::::<><>::
+20_Judgement.png::CompressedTexture2D::3433646830553187364::1695630419::1695630419::1::::<><>::
+21_The World.png::CompressedTexture2D::9103905338737664069::1695630419::1695630419::1::::<><>::
+backimage.png::CompressedTexture2D::8030275287443155878::1695630419::1695630419::1::::<><>::
+readme.txt::TextFile::-1::1695630419::0::1::::<><>::
+::res://Scenes/::1695704387
+arrow.tscn::PackedScene::8692396979697122972::1695644755::0::1::::<><>::uid://bewiu0q2mhuyu
+card_bod.tscn::PackedScene::5411748755326896476::1695644755::0::1::::<><>::res://Scripts/Draggable.gd<>uid://ptkew8n70wrp
+ClickToMove.gd::GDScript::-1::1695626288::0::1::::<>TextureRect<>::
+room_1.tscn::PackedScene::2095850371452758276::1695704387::0::1::::<><>::uid://dagv1pklhga5b::::res://Art/RoomOne.png<>uid://dv3wrjtps5sbc::::res://Scenes/arrow.tscn<>uid://cjdqygkja48y7::::res://Scenes/card_bod.tscn
+room_2.tscn::PackedScene::7829155194422381231::1695644755::0::1::::<><>::uid://t48uj2s1jp48
+room_3.tscn::PackedScene::4501639314699735928::1695644755::0::1::::<><>::uid://d6byo7k20b8u
+room_4.tscn::PackedScene::7054243102338045920::1695644755::0::1::::<><>::uid://di4nklybhyuwq
+::res://Scripts/::1695644734
+Draggable.gd::GDScript::-1::1695644734::0::1::::<>CharacterBody2D<>::

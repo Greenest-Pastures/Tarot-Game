@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cjdqygkja48y7"]
+
+[ext_resource type="Script" path="res://Scripts/Draggable.gd" id="1_pkxni"]
+[ext_resource type="Texture2D" uid="uid://ptkew8n70wrp" path="res://Art/TarotDecks/mst001f/00_The Fool.png" id="1_qic1c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d3spq"]
+size = Vector2(89, 149)
+
+[node name="CardBod" type="CharacterBody2D"]
+input_pickable = true
+motion_mode = 1
+script = ExtResource("1_pkxni")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_d3spq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_qic1c")
+
+[connection signal="input_event" from="." to="." method="_on_KinematicBody2D_input_event"]
