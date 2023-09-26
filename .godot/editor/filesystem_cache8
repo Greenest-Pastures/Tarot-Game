@@ -1,13 +1,17 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1695704547
+::res://::1695709565
 icon.svg::CompressedTexture2D::1434815201031088516::1695626288::1695626288::1::::<><>::
 README.md::TextFile::-1::1695704357::0::1::::<><>::
-::res://Art/::1695630414
+::res://Art/::1695708812
 Arrow.png::CompressedTexture2D::2713115159698491116::1695626289::1695626289::1::::<><>::
 RoomFour.png::CompressedTexture2D::7781447548784223260::1695626289::1695626289::1::::<><>::
 RoomOne.png::CompressedTexture2D::7172970608900962045::1695626289::1695626289::1::::<><>::
 RoomThree.png::CompressedTexture2D::274666602588497714::1695626289::1695626289::1::::<><>::
 RoomTwo.png::CompressedTexture2D::1395494875902565023::1695626289::1695626289::1::::<><>::
+::res://Art/MiscAssets/::1695709565
+TableTop.jpg::CompressedTexture2D::856774774130008244::1695707851::1695709566::1::::<><>::
+::res://Art/Shaders/::1695709565
+dropShadow.gdshader::Shader::-1::1695709565::0::1::::<><>::
 ::res://Art/TarotDecks/::1695630418
 ::res://Art/TarotDecks/mst001f/::1695630419
 00_The Fool.png::CompressedTexture2D::1092671352127586513::1695630418::1695630419::1::::<><>::
@@ -34,13 +38,14 @@ RoomTwo.png::CompressedTexture2D::1395494875902565023::1695626289::1695626289::1
 21_The World.png::CompressedTexture2D::9103905338737664069::1695630419::1695630419::1::::<><>::
 backimage.png::CompressedTexture2D::8030275287443155878::1695630419::1695630419::1::::<><>::
 readme.txt::TextFile::-1::1695630419::0::1::::<><>::
-::res://Scenes/::1695704387
-arrow.tscn::PackedScene::8692396979697122972::1695644755::0::1::::<><>::uid://bewiu0q2mhuyu
-card_bod.tscn::PackedScene::5411748755326896476::1695644755::0::1::::<><>::res://Scripts/Draggable.gd<>uid://ptkew8n70wrp
+::res://Scenes/::1695709565
+arrow.tscn::PackedScene::8692396979697122972::1695709105::0::1::::<><>::uid://bewiu0q2mhuyu::::res://Art/Arrow.png<>res://Scenes/ClickToMove.gd
+card_bod.tscn::PackedScene::5411748755326896476::1695709105::0::1::::<><>::res://Scripts/Draggable.gd<>uid://ptkew8n70wrp::::res://Art/TarotDecks/mst001f/00_The Fool.png
 ClickToMove.gd::GDScript::-1::1695626288::0::1::::<>TextureRect<>::
-room_1.tscn::PackedScene::2095850371452758276::1695704387::0::1::::<><>::uid://dagv1pklhga5b::::res://Art/RoomOne.png<>uid://dv3wrjtps5sbc::::res://Scenes/arrow.tscn<>uid://cjdqygkja48y7::::res://Scenes/card_bod.tscn
-room_2.tscn::PackedScene::7829155194422381231::1695644755::0::1::::<><>::uid://t48uj2s1jp48
-room_3.tscn::PackedScene::4501639314699735928::1695644755::0::1::::<><>::uid://d6byo7k20b8u
-room_4.tscn::PackedScene::7054243102338045920::1695644755::0::1::::<><>::uid://di4nklybhyuwq
+desktop.tscn::PackedScene::3116713092509848345::1695709565::0::1::::<><>::res://Art/Shaders/dropShadow.gdshader<>uid://mha7qnhmcthk::::res://Art/MiscAssets/TableTop.jpg
+room_1.tscn::PackedScene::2095850371452758276::1695709105::0::1::::<><>::uid://dagv1pklhga5b::::res://Art/RoomOne.png<>uid://dv3wrjtps5sbc::::res://Scenes/arrow.tscn<>uid://cjdqygkja48y7::::res://Scenes/card_bod.tscn
+room_2.tscn::PackedScene::7829155194422381231::1695709105::0::1::::<><>::uid://t48uj2s1jp48::::res://Art/RoomTwo.png<>uid://dv3wrjtps5sbc::::res://Scenes/arrow.tscn
+room_3.tscn::PackedScene::4501639314699735928::1695709105::0::1::::<><>::uid://d6byo7k20b8u::::res://Art/RoomThree.png<>uid://dv3wrjtps5sbc::::res://Scenes/arrow.tscn
+room_4.tscn::PackedScene::7054243102338045920::1695709105::0::1::::<><>::uid://di4nklybhyuwq::::res://Art/RoomFour.png<>uid://dv3wrjtps5sbc::::res://Scenes/arrow.tscn
 ::res://Scripts/::1695644734
 Draggable.gd::GDScript::-1::1695644734::0::1::::<>CharacterBody2D<>::

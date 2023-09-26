@@ -1,1 +1,8 @@
 res://Scenes/room_1.tscn
+res://Scenes/desktop.tscn
+res://Art/Shaders/dropShadow.gdshader
+res://Scenes/room_2.tscn
+res://Scenes/room_3.tscn
+res://Scenes/room_4.tscn
+res://Scenes/arrow.tscn
+res://Scenes/card_bod.tscn
