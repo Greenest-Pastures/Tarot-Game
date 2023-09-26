@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://44il46hrdv8g"]
+
+[ext_resource type="Texture2D" uid="uid://dagv1pklhga5b" path="res://Art/RoomOne.png" id="1_n7g07"]
+[ext_resource type="PackedScene" uid="uid://dv3wrjtps5sbc" path="res://Scenes/arrow.tscn" id="2_eb8wh"]
+[ext_resource type="PackedScene" uid="uid://cjdqygkja48y7" path="res://Scenes/card_bod.tscn" id="3_e1i43"]
+
+[node name="Room1" type="Node2D"]
+
+[node name="RoomOne" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = ExtResource("1_n7g07")
+
+[node name="Arrow" parent="." instance=ExtResource("2_eb8wh")]
+modulate = Color(1, 1, 1, 0)
+offset_left = 85.0
+offset_top = 393.0
+offset_right = 434.0
+offset_bottom = 661.0
+roomToMoveTo = "res://Scenes/room_2.tscn"
+
+[node name="Arrow2" parent="." instance=ExtResource("2_eb8wh")]
+offset_left = -107.0
+offset_top = 495.0
+offset_right = 242.0
+offset_bottom = 763.0
+rotation = 1.57563
+roomToMoveTo = "res://Scenes/room_3.tscn"
+
+[node name="RoomView" type="Camera2D" parent="."]
+zoom = Vector2(0.31, 0.31)
+
+[node name="CardBod" parent="." instance=ExtResource("3_e1i43")]
+position = Vector2(140, 121)
+scale = Vector2(1.89673, 2.22784)

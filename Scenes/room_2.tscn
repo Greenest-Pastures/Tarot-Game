@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://djsrbo1tbi5pj"]
+
+[ext_resource type="Texture2D" uid="uid://t48uj2s1jp48" path="res://Art/RoomTwo.png" id="1_lurbp"]
+[ext_resource type="PackedScene" uid="uid://dv3wrjtps5sbc" path="res://Scenes/arrow.tscn" id="2_4uejn"]
+
+[node name="Room2" type="Node2D"]
+
+[node name="RoomTwo" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = ExtResource("1_lurbp")
+
+[node name="Arrow" parent="." instance=ExtResource("2_4uejn")]
+modulate = Color(1, 1, 1, 0)
+offset_left = -212.0
+offset_top = 259.0
+offset_right = 137.0
+offset_bottom = 527.0
+rotation = -3.1657
+scale = Vector2(0.964684, 3.01187)
+roomToMoveTo = "res://Scenes/room_1.tscn"
+
+[node name="RoomView" type="Camera2D" parent="."]
+zoom = Vector2(0.31, 0.31)
